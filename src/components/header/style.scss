@@ -1,0 +1,106 @@
+
+.header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  background-color: #fff;
+}
+
+.home {
+
+  display: flex;
+
+  .title {
+    flex: 2;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 2rem;
+    margin-left: 25px;
+  }
+
+  .logo {
+    flex: 1;
+
+  }
+}
+
+.menu {
+
+  ul {
+    padding: 0;
+    display: flex;
+
+    .logout {
+      flex: 2;
+
+    }
+
+    .registration {
+      margin: 0 1.5rem;
+    }
+
+    .cart {
+      flex: 1;
+      margin-right: 1rem;
+    }
+
+    .search {
+
+      flex: 2;
+    }
+
+    .dashboard {
+      flex: 1;
+    }
+
+    li {
+      padding: 0;
+      display: flex;
+
+      a {
+        margin: auto 0;
+
+      }
+
+      span {
+        padding: 1.5rem 0;
+        font-size: 2rem;
+        font-weight: 500;
+
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      @media (min-width: 500px) {
+        .header {
+          justify-content: space-around;
+        }
+        .logo {
+          a {
+            img {
+              position: relative;
+              margin-top: 2rem;
+            }
+          }
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+}
+
+
