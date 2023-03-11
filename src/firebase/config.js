@@ -1,8 +1,9 @@
 export const firebaseConfig ={
-    apiKey: "AIzaSyCbzlMNV7CvgStTNyeqxObQfm_BI7jbse4",
-    authDomain: "lotus-store-92ea8.firebaseapp.com",
-    projectId: "lotus-store-92ea8",
-    storageBucket: "lotus-store-92ea8.appspot.com",
-    messagingSenderId: "49985603190",
-    appId: "1:49985603190:web:e32e8ffecfd9a89d9c4157"
+    apiKey: "AIzaSyCP8gdCQbfFT4HryWZMpOibLXMM_QoZ0lg",
+    authDomain: "hust-store.firebaseapp.com",
+    projectId: "hust-store",
+    storageBucket: "hust-store.appspot.com",
+    messagingSenderId: "46266962416",
+    appId: "1:46266962416:web:c3febdb2aaa0574af00d35",
+    measurementId: "G-31N1YXX16T"
 }

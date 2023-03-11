@@ -85,6 +85,11 @@ const Header = () => {
         setAnchorEl(null);
     };
 
+    const handleRegister = () => {
+        history.push('/registration')
+        setAnchorEl(null);
+    };
+
     const handleDashboard = () => {
         history.push('/dashboard')
         setAnchorEl(null);
@@ -127,6 +132,10 @@ const Header = () => {
             >
                 <MenuItem className={classes.menuItem} onClick={handleLogin}>
                     Đăng nhập
+                </MenuItem>
+
+                <MenuItem className={classes.menuItem} onClick={handleRegister}>
+                    Đăng kí
                 </MenuItem>
             </Menu>
             <Link to="/cart">
