@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom'
 import OrderDetail from '../../components/OrderDetails';
@@ -13,13 +13,15 @@ const OrderAdmin = () => {
      const dispatch=useDispatch();
      const { orderDetails } = useSelector(mapState);
      const { orderTotal } = orderDetails;
-     const { recipentCustomer } = orderDetails;
+
+     const [recipentCustomer, setRecipentCustomer] = useState({});
     useEffect(() => {
        
         dispatch(
             getOrderDetails(orderID)
-        )
-
+        ).then(() => {
+            setRecipentCustomer(orderDetails.recipentCustomer)
+        });
        
     }, [orderID])
 
