@@ -27,20 +27,20 @@ const ReceipentInfo = ({ recipentCustomer }) => {
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Người nhận:</Typography>
-                        <Typography variant="h6">{customerName}</Typography>
+                        <Typography variant="h6">{customerName && customerName}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Mã bưu điện:</Typography>
-                        <Typography variant="h6">{postalCode}</Typography>
+                        <Typography variant="h6">{postalCode && postalCode}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Địa chỉ giao hàng:</Typography>
-                        <Typography variant="h6">{addressLine1}, {addressLine2}, {city}</Typography>
+                        <Typography variant="h6">{addressLine1 && addressLine1}, {addressLine2 &&  addressLine2}, {city && city}</Typography>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Số điện thoại người nhận:</Typography>
-                        <Typography variant="h6">{phone}</Typography>
+                        <Typography variant="h6">{phone && phone}</Typography>
                     </Grid>
                 </Grid>
             </Paper>
