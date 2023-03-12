@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ReceipentInfo = ({ recipentCustomer }) => {
     const classes = useStyles();
+    const {customerName, postalCode, addressLine1, addressLine2, city, phone} = recipentCustomer;
     return (
         <div className={classes.root}>
             <Typography variant="h4" gutterBottom>
@@ -26,20 +27,20 @@ const ReceipentInfo = ({ recipentCustomer }) => {
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Người nhận:</Typography>
-                        <Typography variant="h6">{recipentCustomer.customerName}</Typography>
+                        <Typography variant="h6">{customerName}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Mã bưu điện:</Typography>
-                        <Typography variant="h6">{recipentCustomer.postalCode}</Typography>
+                        <Typography variant="h6">{postalCode}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Địa chỉ giao hàng:</Typography>
-                        <Typography variant="h6">{recipentCustomer.addressLine1}, {recipentCustomer.addressLine2}, {recipentCustomer.city}</Typography>
+                        <Typography variant="h6">{addressLine1}, {addressLine2}, {city}</Typography>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Số điện thoại người nhận:</Typography>
-                        <Typography variant="h6">{recipentCustomer.phone}</Typography>
+                        <Typography variant="h6">{phone}</Typography>
                     </Grid>
                 </Grid>
             </Paper>
