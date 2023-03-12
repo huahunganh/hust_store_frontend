@@ -26,20 +26,20 @@ const ReceipentInfo = ({ recipentCustomer }) => {
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Người nhận:</Typography>
-                        <Typography variant="h6">{recipentCustomer.customerName && recipentCustomer.customerName}</Typography>
+                        <Typography variant="h6">{recipentCustomer && recipentCustomer.customerName}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Mã bưu điện:</Typography>
-                        <Typography variant="h6">{recipentCustomer.postalCode && recipentCustomer.postalCode}</Typography>
+                        <Typography variant="h6">{recipentCustomer && recipentCustomer.postalCode}</Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Địa chỉ giao hàng:</Typography>
-                        <Typography variant="h6">{recipentCustomer.addressLine1 && recipentCustomer.addressLine1}, {recipentCustomer.addressLine2 &&  recipentCustomer.addressLine2}, {recipentCustomer.city && recipentCustomer.city}</Typography>
+                        <Typography variant="h6">{recipentCustomer && recipentCustomer.addressLine1}, {recipentCustomer &&  recipentCustomer.addressLine2}, {recipentCustomer && recipentCustomer.city}</Typography>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h5">Số điện thoại người nhận:</Typography>
-                        <Typography variant="h6">{recipentCustomer.phone && recipentCustomer.phone}</Typography>
+                        <Typography variant="h6">{recipentCustomer && recipentCustomer.phone}</Typography>
                     </Grid>
                 </Grid>
             </Paper>
