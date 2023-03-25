@@ -190,7 +190,7 @@ const Header = () => {
             <header className={classes.header}>
                 <div className={classes.title}>
                     <Link to="/"> <img className={classes.logo} style={{width:'60%',height:'auto', paddingBottom: '10px', paddingTop: '10px'}} src={logo} alt="hust Logo" /></Link>
-                    <Link to="/"> <h2>HUST STORE</h2></Link>
+                    <Link to="/"> <h2>Hung Anh STORE</h2></Link>
                 </div>
                 <div>
                     {!currentUser ? unLoged() : Loged()}

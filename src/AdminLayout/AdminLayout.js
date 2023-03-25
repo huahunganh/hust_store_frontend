@@ -21,7 +21,7 @@ const AdminLayout = props => {
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>
-                        <Typography variant="h3">Chào mừng đến với trang quản lý HUST STORE</Typography>
+                        <Typography variant="h3">Chào mừng đến với trang quản lý Hung Anh STORE</Typography>
                         <Typography variant="subtitle1">Dễ dàng hơn với HUA HUNG ANH</Typography>
                     </Paper>
                 </Grid>

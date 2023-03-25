@@ -22,7 +22,7 @@ const AdminToolbar = ({onClick}) => {
 
                 <li>
                     <Link to='/admin'>
-                        <Typography className='adminHeaderTitle'>HUST STORE Management Site</Typography>
+                        <Typography className='adminHeaderTitle'>Hung Anh STORE Management Site</Typography>
                     </Link>
                 </li>
 
