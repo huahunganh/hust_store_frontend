@@ -7,7 +7,7 @@ const LoadMore = ({
     },
 }) => {
     return (
-       <Button onClick={()=>onLoadMoreEvt()}>
+       <Button style={{maxHeight:'40px'}} onClick={()=>onLoadMoreEvt()}>
            Xem thêm
        </Button>
     )

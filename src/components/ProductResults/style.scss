@@ -2,15 +2,36 @@
     display: block;
     width: 100%;
     padding: 0;
-    margin: 1rem 0;
-    
+    margin: 2rem 0 0 0;
+
     .filterSelect{
-      margin: -20px 0 -20px 15px ;
+      margin: 20px 0 20px 15px ;
     }
+
+  .searchDateParent {
+    display: flex;
+    align-items: center;
+
+    .searchDateChild {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .filterSelectNamePrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 300px;
+  }
+  .filterSelectNamePrice:first-child {
+    flex-basis: 150px;
+  }
   
     .productResults {
       display: flex;
-      height: 740px;
+      min-height: 740px;
       flex-wrap: wrap;
       justify-content: space-around;
       overflow: scroll;
